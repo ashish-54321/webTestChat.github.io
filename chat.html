@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chat Web</title>
+    <!-- CDN Link of BootStrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- CSS FILE Link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/my-login.css">
+    <link rel="stylesheet" href="/chat.css">
+
+</head>
+
+
+<!-- ///////////////////          body starts  /////////////////////////////////  -->
+
+<body>
+    <!--  //////////////////////////////// [ chating Web App HTML  ] -->
+    <div id="logicchat">
+
+        <!-- Nav bar starts-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+            <a class="navbar-brand" href="#">
+                <h3>ChatWeb.</h3>
+                <p3>by ASHISH TIWARI</p3>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <button onclick="clearchat()" type="button" class="btn btn-secondary btn-lg">clear chat</button>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            USERS JOIN
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">
+                                <p><b>You</b> online 🟢
+                            </a>
+
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+        <!-- Nav bar ends -->
+
+        <!-- //////////////////////////////////////////// [ break ] /////////////////////////////////////////////// -->
+        <!-- flex box -->
+        <div id="option-box">
+            <h1> Private Chat </h1>
+            <span> coming soon... </span>
+              <hr>
+            <div class="side-panel-user">
+                <a class="dropdown-item" href="#">
+                    <p><b>NO ONE JOIN NOW </b> only you online 🟢
+                        <hr>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Type box starts -->
+
+        <div class="msgbox" id="type">
+
+
+
+
+
+            <div id="loader"></div>
+
+
+
+        </div>
+
+        <div id="form-txt">
+
+
+
+            <textarea id="exampleFormControlTextarea1" rows="3" placeholder="Typing ...."></textarea>
+            <!-- All buttons -->
+            <button onclick="text()" type="button" class="btn btn-primary btn-lg" id="send-btn">Send </button>
+        </div>
+    </div>
+
+    <!-- Contener ends -->
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+
+    <!-- /////////////////// [   login forn html Starts   ] ////////////////////////////////////////////////////////-->
+
+
+    <div class="my-login-page" id="myForm">
+        <section class="h-100">
+            <div class="container h-100">
+                <div class="row justify-content-md-center h-100">
+                    <div class="card-wrapper">
+                        <div class="brand">
+                            <img src="logo.jpg" alt="logo">
+                        </div>
+                        <div class="card fat">
+                            <div class="card-body">
+                                <h4 class="card-title">WELLCOME TO WEB CHAT !</h4>
+
+                                <div class="form-group">
+                                    <label for="email">Your Name </label>
+
+
+                                    <input id="email" type="email" class="form-control" name="email" required autofocus>
+
+                                </div>
+
+
+
+
+
+                                <div class="form-group m-0">
+
+                                    <button type="button" class="btn btn-primary" onclick="closeForm()">
+                                        Login
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            Copyright &copy; 2022 &mdash; Devloper- ASHISH TIWARI
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- /////////////////////////////[ Ends ]/////////////////////////////////////////// -->
+
+
+
+    <!-- ////////////////////////////////////////////// All .js file link here //////////////////////////// -->
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/chat.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+</body>
+<!-- that's All the end of HTML  -->
+
+</html>
