@@ -1,0 +1,434 @@
+body {
+
+
+    background-image: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+
+}
+
+
+/* loding animation  */
+#loader {
+    margin-left: 50%;
+    display: none;
+    border: 16px solid #f3f3f3;
+    /* Light grey */
+    border-top: 16px solid #3498db;
+    /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#kop {
+    margin-left: 46%;
+}
+
+#logicchat {
+    display: none;
+
+
+}
+
+
+
+.message {
+
+
+    width: fit-content;
+    padding: 4px;
+    padding-bottom: 1px;
+    margin: 17px;
+    margin-right: 12px;
+    margin-left: 2px;
+
+    border-radius: 15px;
+}
+
+.income {
+
+    background: #ffffff;
+    float: left;
+    clear: both;
+}
+
+.outcome {
+    background: #DCF8C6;
+    float: right;
+    clear: both;
+}
+
+h5 {
+
+
+    float: right;
+    color: #333;
+    font-size: 14px;
+}
+
+h6 {
+
+
+    float: right;
+    color: #333;
+    font-size: 10px;
+}
+
+
+.status {
+    clear: both;
+    background: #cec8c8;
+    width: fit-content;
+    padding: 6px;
+    padding-bottom: 1px;
+    border-radius: 16px;
+    margin-left: 46%;
+
+    /* color: red; */
+}
+
+#option-box {
+    position: static;
+    flex-direction: column;
+    background: wheat;
+    border: 2px solid black;
+    overflow-y: auto;
+    margin: auto;
+    height: 87vh;
+    float: left;
+    margin-left: 5px;
+    padding-right: 10%;
+
+}
+
+
+#type {
+
+
+    /* background-color: white; */
+    overflow-y: auto;
+
+    /* max-width: 955px; */
+    margin: auto;
+    height: 75vh;
+    /* background-color: #000; */
+    background-image: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    scroll-behavior: smooth;
+
+}
+
+#form-txt {
+
+
+    padding-top: 5px;
+    margin-left: 25%;
+    background-color: #f3f3f3;
+
+
+}
+
+
+textarea {
+
+    margin-left: 5px;
+    margin-right: 0px;
+    width: 641px;
+    height: 79px;
+
+
+    resize: both;
+    box-sizing: content-box;
+    height: auto;
+    min-height: 41px;
+    max-height: 97px;
+
+    border: 1px solid #e4e7ec;
+    border-radius: 15px;
+    background-color: #f9fafb;
+    outline: none;
+    /* padding: 0 24px 0 24px; */
+    overflow: hidden;
+}
+
+#send-btn {
+    float: right;
+    margin-top: 10px;
+    margin-right: 250px;
+}
+
+
+
+@media screen and (min-width: 10px) {
+
+    #option-box {
+        display: none;
+    }
+
+    textarea {
+        width: 221px;
+        height: 47px;
+
+    }
+
+    #send-btn {
+        margin-right: 2px;
+        margin-top: 2px;
+    }
+
+    #form-txt {
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+
+
+
+}
+
+
+@media screen and (min-width: 373px) {
+
+    #option-box {
+        display: none;
+    }
+
+    textarea {
+        width: 270px;
+        height: 48px;
+
+    }
+
+    #send-btn {
+        margin-right: 2px;
+        margin-top: 2px;
+    }
+
+    #form-txt {
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+
+
+
+}
+
+@media screen and (min-width: 423px) {
+
+    #option-box {
+        display: none;
+    }
+
+    textarea {
+        width: 323px;
+        height: 53px;
+    }
+
+
+
+    #send-btn {
+        margin-right: 2px;
+        margin-top: 2px;
+    }
+
+    #form-txt {
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+
+
+
+}
+
+@media screen and (min-width: 766px) {
+
+    #option-box {
+        display: none;
+    }
+
+    textarea {
+        width: 574px;
+        height: 87px;
+    }
+
+    #type {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        height: 432px;
+
+    }
+
+    #send-btn {
+        margin-right: 83px;
+        margin-top: 22px;
+
+    }
+
+    #form-txt {
+        margin-bottom: 2px;
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+
+
+
+}
+
+
+@media screen and (min-width: 1022px) {
+
+    /*  for small laptop */
+    #option-box {
+        display: block;
+    }
+
+    textarea {
+        width: 520px;
+        height: 119px;
+    }
+
+    #type {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        height: 432px;
+
+    }
+
+    #send-btn {
+        margin-right: 70px;
+        margin-top: 22px;
+
+    }
+
+    #form-txt {
+        margin-bottom: 2px;
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+
+
+
+}
+
+@media screen and (min-width: 1440px) {
+
+    /*  for L laptop */
+    #option-box {
+        display: block;
+    }
+
+    textarea {
+        margin-left: 45px;
+        width: 897px;
+        height: 112px;
+
+    }
+
+    #type {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        height: 506px;
+
+    }
+
+    #send-btn {
+        margin-right: 70px;
+        margin-top: 22px;
+
+    }
+
+    #form-txt {
+
+        margin-bottom: 2px;
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+
+  
+}
+/* @media screen and (min-width: 2560px) { */
+
+    /*  for L laptop */
+    /* #option-box {
+        display: block;
+    }
+
+    textarea {
+        margin-left: 27px;
+        width: 945px;
+        height: 121px;
+
+    }
+
+    #type {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        height: 507px;
+
+    }
+
+    #send-btn {
+        margin-right: 70px;
+        margin-top: 22px;
+
+    }
+
+    #form-txt {
+        margin-bottom: 2px;
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+    
+} */
+
+
+
+
+
+
+/* @media screen and (max-width: 610px) {
+
+    #option-box {
+        display: none;
+    }
+
+    #form-txt {
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+
+
+    #send-btn {
+        margin-right: 15px;
+    }
+}
+
+@media screen and (min-width: 376px) {
+    #option-box {
+        display: none;
+    }
+
+    textarea {
+        width: 261px;
+        height: 42px;
+    }
+
+    #send-btn {
+        margin-top: 2px;
+    }
+} */
